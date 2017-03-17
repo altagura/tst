@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+Options -Indexes
+<FilesMatch ".(inc|log|txt|js)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch> 
